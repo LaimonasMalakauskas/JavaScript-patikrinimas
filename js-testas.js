@@ -30,6 +30,23 @@ Pritaikykite savo sukurtą funkciją ir išspausdinkite atitikmenį
 eurais.
 */
 
+console.log('---------------------2---------------------');
+console.log();
+
+function doleriaiIEurus(doleriai, kursasDol) {
+  return (doleriai / kursasDol).toFixed(4);
+}
+
+const kursasDol = 1.0492;
+const doleriai = Math.floor(Math.random() * 1000) + 1;
+const konvertuotiEurusIDolerius = doleriaiIEurus(doleriai, kursasDol);
+
+console.log(`Atsitiktinai sugeneruota doleriu suma: ${doleriai} USD`);
+console.log();
+console.log(`${doleriai} dolerius kovertuojant i eurus gausime: ${konvertuotiEurusIDolerius} EUR`);
+
+console.log();
+
 /*
 3. Parašykite programą, kuri suskaičiuotų žmogaus BMI (body
 mass index), kai yra žinomas žmogaus ūgis ir svoris. 
