@@ -91,7 +91,7 @@ dienomis.
 console.log('---------------------4---------------------');
 console.log();
 
-function skaiciutiDVMS (metai){
+function skaiciutiDVMS(metai) {
   return metai;
 }
 
@@ -109,12 +109,35 @@ console.log(`Amzius sekundemis : ${sekundes} sekundes`);
 
 console.log();
 
-
-
 /*
 5. Parašykite programą, kuri konvertuos termometro
 duomenis iš Farenheito į Celsijų, ir atvirkščiai.
 */
+
+console.log('---------------------5---------------------');
+console.log();
+
+function isFarenheitoICelcijus(farenheitas) {
+  return ((farenheitas-32)/1.8).toFixed(1); //formule is farenheitu i celcijus
+}
+
+const farenheitas = 10;
+
+const celcijai = isFarenheitoICelcijus(farenheitas);
+
+console.log(`Tutint ${farenheitas} faranheitu, gausime ${celcijai} celcijus`);
+console.log();
+
+function isCelcijausIFarenheitus(celcijus) {
+  return (celcijus * 1.8 + 32).toFixed(1); //formule is celciju i farenheitus
+}
+
+const celcijus = 10;
+
+const farenheitai = isCelcijausIFarenheitus(celcijus);
+
+console.log(`Tutint ${celcijus} celcijus, gausime ${farenheitai} farenheitus`);
+console.log();
 
 /*
 6. Sukurkite kodą, kuris išspausdins į konsolę
