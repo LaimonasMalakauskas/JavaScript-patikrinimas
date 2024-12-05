@@ -6,7 +6,22 @@ Pritaikykite savo sukurtą funkciją ir išspausdinkite atitikmenį
 doleriais.
 */
 
+console.log('---------------------1---------------------');
+console.log();
 
+function euraiIDolerius(eurai, kursas) {
+  return (eurai * kursas).toFixed(4);
+}
+
+const kursas = 1.0492;
+const eurai = Math.floor(Math.random() * 1000) + 1;
+const konvertuotiIDolerius = euraiIDolerius(eurai, kursas);
+
+console.log(`Atsitiktinai sugeneruota euru suma: ${eurai} EUR`);
+console.log();
+console.log(`${eurai} eurus kovertuojant i dolerius gausime: ${konvertuotiIDolerius} USD`);
+
+console.log();
 
 /*
 2. Sukurkite funkciją, kuri paverstų dolerius į eurus.
