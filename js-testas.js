@@ -88,6 +88,29 @@ pasakytų kiek tai yra sekundėmis, minutėmis, valandomis,
 dienomis.
 */
 
+console.log('---------------------4---------------------');
+console.log();
+
+function skaiciutiDVMS (metai){
+  return metai;
+}
+
+const metai = 36;
+const dienos = skaiciutiDVMS(metai * 365);
+const valandos = skaiciutiDVMS(dienos * 24);
+const minutes = skaiciutiDVMS(valandos * 60);
+const sekundes = skaiciutiDVMS(minutes * 60);
+
+console.log(`Jei zmogaus amzius ${metai} metai`);
+console.log(`Amzius dienomis : ${dienos} dienos`);
+console.log(`Amzius valandomis : ${valandos} valandos`);
+console.log(`Amzius minutemis : ${minutes} minutes`);
+console.log(`Amzius sekundemis : ${sekundes} sekundes`);
+
+console.log();
+
+
+
 /*
 5. Parašykite programą, kuri konvertuos termometro
 duomenis iš Farenheito į Celsijų, ir atvirkščiai.
