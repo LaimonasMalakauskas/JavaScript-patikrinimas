@@ -58,6 +58,30 @@ Normalu = 18.5 <= BMI < 25
 Per mažas svoris = BMI < 18.5
 */
 
+console.log('---------------------3---------------------');
+console.log();
+
+function rastiBMI(ugis, svoris) {
+  return (svoris / ugis ** 2).toFixed(1);
+}
+
+const ugis = 1.78;
+const svoris = 80;
+const BMI = rastiBMI(ugis, svoris);
+
+console.log(`Jusu BMI rodiklis: ${BMI}`);
+console.log();
+
+if (BMI > 25) {
+  console.log('Jusu turite virsvori');
+} else if (BMI >= 18.5 && BMI < 25) {
+  console.log('Jusu BMI rodikliai normalus');
+} else {
+  console.log('Jusu svoris per mazas');
+}
+
+console.log();
+
 /*
 4. Parašykite programą, kuri iš duoto žmogaus amžiaus metais
 pasakytų kiek tai yra sekundėmis, minutėmis, valandomis,
