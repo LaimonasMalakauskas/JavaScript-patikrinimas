@@ -253,3 +253,20 @@ slaptažodį. Slaptažodyje privalo būti bent po vieną: didžioji raidė,
 mažoji raidė, skaičius, specialusis simbolis. Visi slaptažodžio
 simboliai privalo būti atsitiktiniai ir atsitiktine tvarka.
 */
+
+console.log('---------------------10---------------------');
+console.log();
+
+function generuotiSlaptazodi(ilgis) {
+  let slaptazodis = '';
+  const galimiSimboliai = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+[]{}|;:,.<>?';
+  
+  // Loop to generate characters for the specified length
+  for (let i = 0; i < ilgis; i++) {
+      const atsitiktinisSimbolis = Math.floor(Math.random() * galimiSimboliai.length);
+      slaptazodis += galimiSimboliai.charAt(atsitiktinisSimbolis);
+  }
+  return slaptazodis;
+}
+console.log(generuotiSlaptazodi(12));
+console.log();
