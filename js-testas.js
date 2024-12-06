@@ -118,7 +118,7 @@ console.log('---------------------5---------------------');
 console.log();
 
 function isFarenheitoICelcijus(farenheitas) {
-  return ((farenheitas-32)/1.8).toFixed(1); //formule is farenheitu i celcijus
+  return ((farenheitas - 32) / 1.8).toFixed(1); //formule is farenheitu i celcijus
 }
 
 const farenheitas = 10;
@@ -144,6 +144,22 @@ console.log();
 1-2-3-4-5-6-7-8-9-10 vienoje eilutėje. Prieš vienetą ir po
 dešimties neturėtų būti brūkšniuko.
 */
+
+console.log('---------------------6---------------------');
+console.log();
+
+function spaustintiSkaicius() {
+  let skaiciai = '';
+  for (let i = 1; i <= 10; i++) {
+    skaiciai += i;
+    if (i < 10) {
+      skaiciai = skaiciai + '-';
+    }
+  }
+  console.log(skaiciai);
+}
+spaustintiSkaicius();
+console.log();
 
 /*
 7. Panaudokite for ciklus, kad sukurtumėte tokį vaizdą konsolėje.
