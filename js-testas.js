@@ -188,6 +188,24 @@ console.log();
 8. Parašykite kodą, kuris apskaičiuos kiek liko dienų iki Kalėdų.
 */
 
+console.log('---------------------8---------------------');
+console.log();
+
+function kiekDienuIkiKaledu (){
+
+const siandien = new Date();
+const metaiDabar = siandien.getFullYear();
+let kaledos = new Date (metaiDabar, 11, 26);
+
+const vienaDiena = 24 * 60 * 60 * 1000; 
+
+const likusiosDienos = Math.floor((kaledos - siandien) / vienaDiena);
+
+console.log(`Iki Kaledu liko ${likusiosDienos} dienos(-u).`);
+}
+kiekDienuIkiKaledu ();
+console.log();
+
 /*
 9. Parašykite kodą, kuris apjungia masyvo duomenis į vieną
 tekstinę eilutę. Turėtumėte gauti tokį rezultatą:
