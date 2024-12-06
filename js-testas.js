@@ -170,6 +170,20 @@ console.log();
 *****
 */
 
+console.log('---------------------7---------------------');
+console.log();
+
+function spaustintiZvaigzdute() {
+
+  let simbolis = '';
+  for (let i = 1; i < 6; i++){
+    simbolis+='*'; 
+    console.log(simbolis);
+  }
+}
+spaustintiZvaigzdute();
+console.log();
+
 /*
 8. Parašykite kodą, kuris apskaičiuos kiek liko dienų iki Kalėdų.
 */
