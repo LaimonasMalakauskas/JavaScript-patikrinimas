@@ -213,6 +213,40 @@ Tomas,Dainius,Paulius,Jonas
 Tomas+Dainius+Paulius+Jonas
 */
 
+console.log('---------------------9---------------------');
+console.log();
+
+let vardai = ['Tomas', 'Dainius', 'Paulius', 'Jonas'];
+
+// console.log(vardai.join(','));
+// console.log(vardai.join('+'));
+
+function spaustintiVardusKablelis() {
+  let vardas = '';
+  for (let i = 0; i <vardai.length; i++) {
+    vardas += vardai[i];
+    if (i <vardai.length-1) {
+      vardas = vardas + ',';
+    } 
+  }
+  console.log(vardas);
+}
+spaustintiVardusKablelis();
+console.log();
+
+function spaustintiVardusPliusas() {
+  let vardas = '';
+  for (let i = 0; i <vardai.length; i++) {
+    vardas += vardai[i];
+    if (i <vardai.length-1) {
+      vardas = vardas + '+';
+    } 
+  }
+  console.log(vardas);
+}
+spaustintiVardusPliusas();
+console.log();
+
 /*
 10. Parašykite kodą, kuris sugeneruos dvylikos simbolių
 slaptažodį. Slaptažodyje privalo būti bent po vieną: didžioji raidė,
